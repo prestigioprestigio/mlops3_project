@@ -3,13 +3,13 @@
 For additional information see the Model Card paper: https://arxiv.org/pdf/1810.03993.pdf
 
 ## Model Details
-This is a Logistic Regression model from the sci-kit learn library
-Default parameters are used.
-No hypertuning.
+This is a Logistic Regression model from the sci-kit learn library  
+Default parameters are used.  
+No hypertuning.  
 
 ## Intended Use
-Given census data, the purpose of the model is to predict whether a person makes above or below 50K USD yearly.
-
+Given census data, the purpose of the model is to predict whether a person makes above or below 50K USD yearly.  
+  
 ## Training and Evaluation Data
 The data is first cleaned from redundant space characters in the headers.
 Afterwards, 10% of the data, named `census_ref_eval.csv` is hidden away for evaluation. The reamining 90% are stored in `census_ref.csv`.  
