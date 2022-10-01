@@ -42,7 +42,7 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          python -m pytest .
+          cd src && python -m pytest .
       - name: Upload pytest test results
         uses: actions/upload-artifact@v3
         with:
