@@ -26,16 +26,17 @@ cat_features = [
 X_train, y_train, encoder, lb, scaler= process_data(
     train, categorical_features=cat_features, label="salary", training=True
 )
-# joblib.dump(encoder, '../artifacts/encoder.pkl')
-# joblib.dump(lb, '../artifacts/label_binarizer.pkl')
-# joblib.dump(scaler, '../artifacts/scaler.pkl')
+
+# Save artifacts
+joblib.dump(encoder, '../artifacts/encoder.pkl')
+joblib.dump(lb, '../artifacts/label_binarizer.pkl')
+joblib.dump(scaler, '../artifacts/scaler.pkl')
 
 # Proces the test data with the process_data function.
 X_test, y_test, _, _, _= process_data(
     test, categorical_features=cat_features, label="salary", training=False, 
     encoder=encoder, lb=lb, scaler=scaler
 )
-
 
 # Train and save a model.
 clf = m.train_model(X_train, y_train)
@@ -50,4 +51,5 @@ print(f"Accuracy: {round(accuracy, 2)}")
 m.slice_perf(test, clf, features=cat_features, encoder=encoder, lb=lb, 
              scaler=scaler, categorical=True)
 
-# joblib.dump(clf, '../models/lr.pkl') 
+# Save model
+joblib.dump(clf, '../models/lr.pkl') 

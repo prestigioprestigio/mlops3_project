@@ -87,14 +87,12 @@ def slice_perf(data, model, encoder, lb, scaler, features: list, categorical: bo
         encoder=encoder, lb=lb, scaler=scaler
     )
     y_pred = model.predict(X_eval)
-    for feat in features:
-        print('-'*20)
-        print(feat)
-        print('-'*20)
-        if categorical:
-            for cat in data[feat].unique():
-                idx = data[feat] == cat
-                accuracy = np.mean(y_pred[idx] == y_eval[idx])
-                if accuracy < 0.75:
-                    print(f"Performance on slice {feat}:{cat} is {round(accuracy, 3)}")
-        print()
+    with open('../slice_output.txt', 'w') as f:
+        for feat in features:
+            f.write('-'*20 + '\n' + feat + '\n' + '-'*20 +  '\n')
+            if categorical:
+                for cat in data[feat].unique():
+                    idx = data[feat] == cat
+                    accuracy = np.mean(y_pred[idx] == y_eval[idx])
+                    f.write(f"Performance on slice {feat}:{cat} is {round(accuracy, 3)}\n")
+            f.write('\n')
