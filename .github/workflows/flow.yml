@@ -55,4 +55,4 @@ jobs:
         run: |
           uvicorn --app-dir src/api main:app --reload --host 0.0.0.0 --port 8000 &
           sleep 3s
-          cd src/api && python -m pytest .
+          cd src/api && python -m pytest test_app.py
