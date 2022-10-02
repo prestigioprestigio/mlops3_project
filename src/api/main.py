@@ -1,5 +1,6 @@
 import os, sys
-sys.path.append("..")
+import pathlib
+sys.path.append(os.path.join(pathlib.Path(__file__).parent.resolve(), '..'))
 import pandas as pd
 from fastapi import FastAPI
 from fastapi.encoders import jsonable_encoder
