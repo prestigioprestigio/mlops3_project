@@ -1,2 +1,2 @@
-curl https://github.com/iterative/dvc/releases/download/2.0.18/dvc_2.0.18_amd64.deb .
-sudo apt install .*
+curl https://github.com/iterative/dvc/releases/download/2.0.18/dvc_2.0.18_amd64.deb
+sudo apt install dvc_2.0.18_amd64.deb
