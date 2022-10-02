@@ -42,7 +42,8 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Test with pytest
         run: |
-          cd src && python -m pytest .
+          # API tests ignored for now, since the server isn't up by this stage
+          cd src && python -m pytest --ignore=api
       - name: Upload pytest test results
         uses: actions/upload-artifact@v3
         with:
