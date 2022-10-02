@@ -22,7 +22,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8 pytest
           pip install uvicorn fastapi pydantic scikit-learn pandas numpy requests
-          -- if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
