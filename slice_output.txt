@@ -1,132 +1,133 @@
 --------------------
 workclass
 --------------------
-Performance on slice workclass: Federal-gov is 0.818
-Performance on slice workclass: Private is 0.859
-Performance on slice workclass: Local-gov is 0.823
-Performance on slice workclass: Self-emp-not-inc is 0.792
-Performance on slice workclass: ? is 0.917
-Performance on slice workclass: State-gov is 0.84
-Performance on slice workclass: Self-emp-inc is 0.765
-Performance on slice workclass: Without-pay is 1.0
-Performance on slice workclass: Never-worked is 1.0
+Performance on slice workclass:Private is 0.869
+Performance on slice workclass:Local-gov is 0.771
+Performance on slice workclass:Self-emp-not-inc is 0.777
+Performance on slice workclass:? is 0.916
+Performance on slice workclass:State-gov is 0.849
+Performance on slice workclass:Federal-gov is 0.847
+Performance on slice workclass:Self-emp-inc is 0.749
+Performance on slice workclass:Never-worked is 1.0
+Performance on slice workclass:Without-pay is 1.0
 
 --------------------
 education
 --------------------
-Performance on slice education: Assoc-acdm is 0.804
-Performance on slice education: 9th is 0.918
-Performance on slice education: HS-grad is 0.87
-Performance on slice education: Some-college is 0.845
-Performance on slice education: Bachelors is 0.786
-Performance on slice education: Assoc-voc is 0.822
-Performance on slice education: 7th-8th is 0.909
-Performance on slice education: Prof-school is 0.811
-Performance on slice education: Masters is 0.809
-Performance on slice education: 11th is 0.964
-Performance on slice education: 10th is 0.916
-Performance on slice education: 5th-6th is 0.924
-Performance on slice education: 12th is 0.913
-Performance on slice education: 1st-4th is 0.969
-Performance on slice education: Preschool is 1.0
-Performance on slice education: Doctorate is 0.841
+Performance on slice education:Assoc-acdm is 0.832
+Performance on slice education:HS-grad is 0.871
+Performance on slice education:11th is 0.958
+Performance on slice education:Bachelors is 0.782
+Performance on slice education:Some-college is 0.855
+Performance on slice education:7th-8th is 0.938
+Performance on slice education:Prof-school is 0.792
+Performance on slice education:Assoc-voc is 0.797
+Performance on slice education:Masters is 0.834
+Performance on slice education:1st-4th is 0.962
+Performance on slice education:10th is 0.911
+Performance on slice education:Doctorate is 0.791
+Performance on slice education:9th is 0.95
+Performance on slice education:12th is 0.952
+Performance on slice education:5th-6th is 0.951
+Performance on slice education:Preschool is 0.917
 
 --------------------
 marital-status
 --------------------
-Performance on slice marital-status: Married-civ-spouse is 0.731
-Performance on slice marital-status: Never-married is 0.967
-Performance on slice marital-status: Married-spouse-absent is 0.908
-Performance on slice marital-status: Divorced is 0.918
-Performance on slice marital-status: Widowed is 0.894
-Performance on slice marital-status: Separated is 0.976
-Performance on slice marital-status: Married-AF-spouse is 1.0
+Performance on slice marital-status:Married-civ-spouse is 0.741
+Performance on slice marital-status:Never-married is 0.965
+Performance on slice marital-status:Separated is 0.951
+Performance on slice marital-status:Divorced is 0.918
+Performance on slice marital-status:Widowed is 0.929
+Performance on slice marital-status:Married-spouse-absent is 0.902
+Performance on slice marital-status:Married-AF-spouse is 1.0
 
 --------------------
 occupation
 --------------------
-Performance on slice occupation: Adm-clerical is 0.894
-Performance on slice occupation: Other-service is 0.96
-Performance on slice occupation: Craft-repair is 0.793
-Performance on slice occupation: Handlers-cleaners is 0.942
-Performance on slice occupation: Exec-managerial is 0.797
-Performance on slice occupation: Prof-specialty is 0.815
-Performance on slice occupation: Sales is 0.798
-Performance on slice occupation: Tech-support is 0.784
-Performance on slice occupation: Machine-op-inspct is 0.899
-Performance on slice occupation: ? is 0.917
-Performance on slice occupation: Farming-fishing is 0.913
-Performance on slice occupation: Transport-moving is 0.825
-Performance on slice occupation: Protective-serv is 0.712
-Performance on slice occupation: Priv-house-serv is 1.0
-Performance on slice occupation: Armed-Forces is 1.0
+Performance on slice occupation:Tech-support is 0.78
+Performance on slice occupation:Craft-repair is 0.788
+Performance on slice occupation:Adm-clerical is 0.897
+Performance on slice occupation:Machine-op-inspct is 0.914
+Performance on slice occupation:Prof-specialty is 0.808
+Performance on slice occupation:Sales is 0.827
+Performance on slice occupation:? is 0.916
+Performance on slice occupation:Other-service is 0.953
+Performance on slice occupation:Exec-managerial is 0.79
+Performance on slice occupation:Handlers-cleaners is 0.951
+Performance on slice occupation:Protective-serv is 0.74
+Performance on slice occupation:Transport-moving is 0.834
+Performance on slice occupation:Farming-fishing is 0.911
+Performance on slice occupation:Priv-house-serv is 0.964
+Performance on slice occupation:Armed-Forces is 1.0
 
 --------------------
 relationship
 --------------------
-Performance on slice relationship: Husband is 0.728
-Performance on slice relationship: Own-child is 0.993
-Performance on slice relationship: Unmarried is 0.947
-Performance on slice relationship: Not-in-family is 0.922
-Performance on slice relationship: Other-relative is 0.959
-Performance on slice relationship: Wife is 0.74
+Performance on slice relationship:Husband is 0.739
+Performance on slice relationship:Not-in-family is 0.919
+Performance on slice relationship:Own-child is 0.993
+Performance on slice relationship:Unmarried is 0.942
+Performance on slice relationship:Wife is 0.748
+Performance on slice relationship:Other-relative is 0.953
 
 --------------------
 race
 --------------------
-Performance on slice race: White is 0.843
-Performance on slice race: Black is 0.908
-Performance on slice race: Other is 0.904
-Performance on slice race: Amer-Indian-Eskimo is 0.897
-Performance on slice race: Asian-Pac-Islander is 0.823
+Performance on slice race:White is 0.843
+Performance on slice race:Other is 0.981
+Performance on slice race:Asian-Pac-Islander is 0.859
+Performance on slice race:Amer-Indian-Eskimo is 0.897
+Performance on slice race:Black is 0.919
 
 --------------------
 sex
 --------------------
-Performance on slice sex: Male is 0.811
-Performance on slice sex: Female is 0.928
+Performance on slice sex:Male is 0.814
+Performance on slice sex:Female is 0.93
 
 --------------------
 native-country
 --------------------
-Performance on slice native-country: United-States is 0.847
-Performance on slice native-country: England is 0.889
-Performance on slice native-country: Mexico is 0.962
-Performance on slice native-country: ? is 0.823
-Performance on slice native-country: Puerto-Rico is 0.914
-Performance on slice native-country: Columbia is 1.0
-Performance on slice native-country: Guatemala is 0.917
-Performance on slice native-country: Germany is 0.857
-Performance on slice native-country: Hong is 0.857
-Performance on slice native-country: India is 0.667
-Performance on slice native-country: Vietnam is 0.933
-Performance on slice native-country: South is 0.882
-Performance on slice native-country: Honduras is 1.0
-Performance on slice native-country: Philippines is 0.848
-Performance on slice native-country: Japan is 0.8
-Performance on slice native-country: Dominican-Republic is 0.933
-Performance on slice native-country: El-Salvador is 1.0
-Performance on slice native-country: Outlying-US(Guam-USVI-etc) is 1.0
-Performance on slice native-country: Canada is 0.842
-Performance on slice native-country: Italy is 0.867
-Performance on slice native-country: Taiwan is 0.786
-Performance on slice native-country: Jamaica is 0.929
-Performance on slice native-country: Poland is 0.75
-Performance on slice native-country: Hungary is 1.0
-Performance on slice native-country: Cambodia is 0.333
-Performance on slice native-country: Ireland is 0.857
-Performance on slice native-country: Cuba is 0.75
-Performance on slice native-country: France is 0.625
-Performance on slice native-country: Iran is 0.5
-Performance on slice native-country: China is 0.786
-Performance on slice native-country: Haiti is 1.0
-Performance on slice native-country: Peru is 0.8
-Performance on slice native-country: Scotland is 1.0
-Performance on slice native-country: Nicaragua is 0.889
-Performance on slice native-country: Thailand is 0.75
-Performance on slice native-country: Ecuador is 1.0
-Performance on slice native-country: Trinadad&Tobago is 1.0
-Performance on slice native-country: Greece is 0.8
-Performance on slice native-country: Laos is 1.0
-Performance on slice native-country: Portugal is 1.0
+Performance on slice native-country:United-States is 0.85
+Performance on slice native-country:Philippines is 0.727
+Performance on slice native-country:Japan is 0.824
+Performance on slice native-country:Puerto-Rico is 0.913
+Performance on slice native-country:? is 0.794
+Performance on slice native-country:Taiwan is 0.9
+Performance on slice native-country:Cuba is 0.889
+Performance on slice native-country:Mexico is 0.946
+Performance on slice native-country:England is 0.812
+Performance on slice native-country:El-Salvador is 1.0
+Performance on slice native-country:Trinadad&Tobago is 1.0
+Performance on slice native-country:India is 0.875
+Performance on slice native-country:Nicaragua is 1.0
+Performance on slice native-country:South is 0.938
+Performance on slice native-country:Outlying-US(Guam-USVI-etc) is 1.0
+Performance on slice native-country:Germany is 0.857
+Performance on slice native-country:Poland is 0.75
+Performance on slice native-country:Canada is 0.826
+Performance on slice native-country:China is 1.0
+Performance on slice native-country:Iran is 1.0
+Performance on slice native-country:Peru is 1.0
+Performance on slice native-country:Columbia is 0.941
+Performance on slice native-country:Yugoslavia is 0.5
+Performance on slice native-country:Dominican-Republic is 1.0
+Performance on slice native-country:Ecuador is 1.0
+Performance on slice native-country:Italy is 0.667
+Performance on slice native-country:Greece is 0.833
+Performance on slice native-country:Jamaica is 0.833
+Performance on slice native-country:Ireland is 1.0
+Performance on slice native-country:Vietnam is 1.0
+Performance on slice native-country:France is 1.0
+Performance on slice native-country:Honduras is 1.0
+Performance on slice native-country:Guatemala is 0.909
+Performance on slice native-country:Thailand is 0.667
+Performance on slice native-country:Portugal is 0.667
+Performance on slice native-country:Hong is 0.8
+Performance on slice native-country:Haiti is 1.0
+Performance on slice native-country:Hungary is 0.667
+Performance on slice native-country:Scotland is 0.0
+Performance on slice native-country:Laos is 1.0
+Performance on slice native-country:Cambodia is 1.0
 

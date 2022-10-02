@@ -1,5 +1,7 @@
+import os
 import numpy as np
 import pandas as pd
+import joblib
 from sklearn.metrics import fbeta_score, precision_score, recall_score, accuracy_score
 from sklearn.linear_model import LogisticRegression
 from .data import process_data
@@ -49,7 +51,7 @@ def compute_model_metrics(y, preds):
     return precision, recall, fbeta, accuracy
 
 
-def inference(model, X):
+def inference(X, model=None):
     """ Run model inferences and return the predictions.
 
     Inputs
@@ -63,7 +65,49 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
+    if model is None:
+        dir_name = os.path.dirname(__file__)
+        model_path = os.path.join(dir_name, '../../models/lr.pkl')
+        model = joblib.load(model_path)
+        
     return model.predict(X)
+        
+    
+def inference_api(X):
+    """ Run model inferences and return the predictions.
+
+    Inputs
+    ------
+    X : np.array
+        Data used for prediction.
+    Returns
+    -------
+    preds : np.array
+        Predictions from the model.
+    """
+    import pathlib
+    dir_name = pathlib.Path(__file__).parent.resolve()
+    model = joblib.load(os.path.join(dir_name, '../../models/lr.pkl'))
+    encoder = joblib.load(os.path.join(dir_name, '../../artifacts/encoder.pkl'))
+    scaler = joblib.load(os.path.join(dir_name, '../../artifacts/scaler.pkl'))
+
+    cat_features = [
+    "workclass",
+    "education",
+    "marital-status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native-country",
+    ]
+    X_processed, _, _, _, _ = process_data(
+        X, categorical_features=cat_features, training=False, 
+        encoder=encoder, scaler=scaler
+        )
+        
+    return model.predict(X_processed)
+
 
 def slice_perf(data, model, encoder, lb, scaler, features: list, categorical: bool):
     """

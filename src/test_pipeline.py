@@ -72,7 +72,7 @@ def test_performance(eval_set, model):
     """
     clf = model
     X_eval, y_eval = eval_set
-    y_pred = m.inference(clf, X_eval)
+    y_pred = m.inference(X_eval, clf)
     precision, recall, fbeta, accuracy = m.compute_model_metrics(y_eval, y_pred)
     print(f"Precision: {round(precision, 2)}")
     print(f"Recall: {round(recall, 2)}")
